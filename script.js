@@ -1,5 +1,3 @@
-document.getElementById("generate-btn").addEventListener("click", generateNumbers);
-
 function generateSecureNumbers() {
     const numbers = new Set();
     while (numbers.size < 6) {
@@ -13,7 +11,5 @@ function generateSecureNumbers() {
 
 document.getElementById("generate-btn").addEventListener("click", () => {
     const numbers = generateSecureNumbers();
-    document.getElementById("numbers-container").textContent =
-        "Your numbers: " + numbers.join(", ");
+    document.getElementById("numbers-container").textContent = "Your numbers: " + numbers.join(", ");
 });
-}
